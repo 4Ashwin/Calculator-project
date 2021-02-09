@@ -1,4 +1,4 @@
-from Tkinter import *
+from tkinter import *
 import math
 import addvalv
 import mul
