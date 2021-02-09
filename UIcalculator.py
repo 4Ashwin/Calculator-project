@@ -3,7 +3,7 @@ import math
 import addvalv
 import mul
 import sub
-import div
+import division
 def add_vals(val1,val2):
     return val1+val2
 
@@ -65,7 +65,7 @@ class Calc():
         #create division function here.
         if self.op == "divide":
             
-            self.total = div.div_vals(self.total,self.current)
+            self.total = division.div_vals(self.total,self.current)
 
 
 
