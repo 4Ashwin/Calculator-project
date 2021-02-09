@@ -1,5 +1,6 @@
 from tkinter import *
 import math
+import add
 from add_val import add_val
 def add_vals(val1,val2):
     return val1+val2
@@ -45,8 +46,7 @@ class Calc():
 
         #create add function here.
         if self.op == "add":
-            pass
-            #self.total =add_vals(self.total,self.current)
+            self.total =add.add_vals(self.total,self.current)
 
 
         #create subtract function here 
