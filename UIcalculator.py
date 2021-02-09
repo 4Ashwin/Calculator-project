@@ -2,7 +2,7 @@ from tkinter import *
 import math
 import addvalv
 import mul
- 
+import sub
 def add_vals(val1,val2):
     return val1+val2
 
@@ -52,8 +52,8 @@ class Calc():
 
         #create subtract function here 
         if self.op == "minus":
-            pass
-            #self.total = sub_vals(self.total,self.current)
+            
+            self.total = sub.sub_vals(self.total,self.current)
 
 
         #create multiplication function here
