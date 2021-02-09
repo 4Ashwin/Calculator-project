@@ -1,7 +1,8 @@
-from tkinter import *
+from Tkinter import *
 import math
-import add
-from add_val import add_val
+import addvalv
+import mul
+ 
 def add_vals(val1,val2):
     return val1+val2
 
@@ -46,7 +47,7 @@ class Calc():
 
         #create add function here.
         if self.op == "add":
-            self.total =add.add_vals(self.total,self.current)
+            self.total =addvalv.add_vals(self.total,self.current)
 
 
         #create subtract function here 
@@ -57,8 +58,8 @@ class Calc():
 
         #create multiplication function here
         if self.op == "times":
-            pass
-            #self.total = mult_vals(self.total,self.current)
+           
+            self.total = mul.mult_vals(self.total,self.current)
 
         #create division function here.
         if self.op == "divide":
@@ -75,9 +76,9 @@ class Calc():
             self.total=int(text_box.get())
             self.total=math.factorial(self.total)
         if self.op == "ln":
-            self.total = log(self.total)
+            self.total = math.log(self.total)
         if self.op == "log":
-            self.total=log(self.total,10)
+            self.total=math.log(self.total,10)
         if self.op == "sine":
             self.total=math.sin(self.total)
         if self.op == "cosine":
